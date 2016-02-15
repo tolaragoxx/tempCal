@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA684ECD1C7248CC00DB416C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684ECC1C7248CC00DB416C /* AppDelegate.swift */; };
+		EA684ECF1C7248CC00DB416C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684ECE1C7248CC00DB416C /* ViewController.swift */; };
+		EA684ED21C7248CC00DB416C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED01C7248CC00DB416C /* Main.storyboard */; };
+		EA684ED51C7248CC00DB416C /* calTEmp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA684ED31C7248CC00DB416C /* calTEmp.xcdatamodeld */; };
+		EA684ED71C7248CC00DB416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED61C7248CC00DB416C /* Assets.xcassets */; };
+		EA684EDA1C7248CC00DB416C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */; };
+		EA684EE51C7248CC00DB416C /* calTEmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684EE41C7248CC00DB416C /* calTEmpTests.swift */; };
+		EA684EF01C7248CE00DB416C /* calTEmpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684EEF1C7248CE00DB416C /* calTEmpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA684EE11C7248CC00DB416C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA684EC11C7248CC00DB416C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA684EC81C7248CC00DB416C;
+			remoteInfo = calTEmp;
+		};
+		EA684EEC1C7248CD00DB416C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA684EC11C7248CC00DB416C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA684EC81C7248CC00DB416C;
+			remoteInfo = calTEmp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA684EC91C7248CC00DB416C /* calTEmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calTEmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA684ECC1C7248CC00DB416C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA684ECE1C7248CC00DB416C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA684ED11C7248CC00DB416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA684ED41C7248CC00DB416C /* calTEmp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = calTEmp.xcdatamodel; sourceTree = "<group>"; };
+		EA684ED61C7248CC00DB416C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA684ED91C7248CC00DB416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA684EDB1C7248CC00DB416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA684EE01C7248CC00DB416C /* calTEmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calTEmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA684EE41C7248CC00DB416C /* calTEmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calTEmpTests.swift; sourceTree = "<group>"; };
+		EA684EE61C7248CC00DB416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA684EEB1C7248CD00DB416C /* calTEmpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calTEmpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA684EEF1C7248CE00DB416C /* calTEmpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calTEmpUITests.swift; sourceTree = "<group>"; };
+		EA684EF11C7248CE00DB416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA684EC61C7248CC00DB416C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EDD1C7248CC00DB416C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EE81C7248CC00DB416C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA684EC01C7248CC00DB416C = {
+			isa = PBXGroup;
+			children = (
+				EA684ECB1C7248CC00DB416C /* calTEmp */,
+				EA684EE31C7248CC00DB416C /* calTEmpTests */,
+				EA684EEE1C7248CD00DB416C /* calTEmpUITests */,
+				EA684ECA1C7248CC00DB416C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA684ECA1C7248CC00DB416C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA684EC91C7248CC00DB416C /* calTEmp.app */,
+				EA684EE01C7248CC00DB416C /* calTEmpTests.xctest */,
+				EA684EEB1C7248CD00DB416C /* calTEmpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA684ECB1C7248CC00DB416C /* calTEmp */ = {
+			isa = PBXGroup;
+			children = (
+				EA684ECC1C7248CC00DB416C /* AppDelegate.swift */,
+				EA684ECE1C7248CC00DB416C /* ViewController.swift */,
+				EA684ED01C7248CC00DB416C /* Main.storyboard */,
+				EA684ED61C7248CC00DB416C /* Assets.xcassets */,
+				EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */,
+				EA684EDB1C7248CC00DB416C /* Info.plist */,
+				EA684ED31C7248CC00DB416C /* calTEmp.xcdatamodeld */,
+			);
+			path = calTEmp;
+			sourceTree = "<group>";
+		};
+		EA684EE31C7248CC00DB416C /* calTEmpTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA684EE41C7248CC00DB416C /* calTEmpTests.swift */,
+				EA684EE61C7248CC00DB416C /* Info.plist */,
+			);
+			path = calTEmpTests;
+			sourceTree = "<group>";
+		};
+		EA684EEE1C7248CD00DB416C /* calTEmpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA684EEF1C7248CE00DB416C /* calTEmpUITests.swift */,
+				EA684EF11C7248CE00DB416C /* Info.plist */,
+			);
+			path = calTEmpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA684EC81C7248CC00DB416C /* calTEmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA684EF41C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmp" */;
+			buildPhases = (
+				EA684EC51C7248CC00DB416C /* Sources */,
+				EA684EC61C7248CC00DB416C /* Frameworks */,
+				EA684EC71C7248CC00DB416C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = calTEmp;
+			productName = calTEmp;
+			productReference = EA684EC91C7248CC00DB416C /* calTEmp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA684EDF1C7248CC00DB416C /* calTEmpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA684EF71C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpTests" */;
+			buildPhases = (
+				EA684EDC1C7248CC00DB416C /* Sources */,
+				EA684EDD1C7248CC00DB416C /* Frameworks */,
+				EA684EDE1C7248CC00DB416C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA684EE21C7248CC00DB416C /* PBXTargetDependency */,
+			);
+			name = calTEmpTests;
+			productName = calTEmpTests;
+			productReference = EA684EE01C7248CC00DB416C /* calTEmpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA684EEA1C7248CC00DB416C /* calTEmpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA684EFA1C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpUITests" */;
+			buildPhases = (
+				EA684EE71C7248CC00DB416C /* Sources */,
+				EA684EE81C7248CC00DB416C /* Frameworks */,
+				EA684EE91C7248CC00DB416C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA684EED1C7248CD00DB416C /* PBXTargetDependency */,
+			);
+			name = calTEmpUITests;
+			productName = calTEmpUITests;
+			productReference = EA684EEB1C7248CD00DB416C /* calTEmpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA684EC11C7248CC00DB416C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = doapps;
+				TargetAttributes = {
+					EA684EC81C7248CC00DB416C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EA684EDF1C7248CC00DB416C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EA684EC81C7248CC00DB416C;
+					};
+					EA684EEA1C7248CC00DB416C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EA684EC81C7248CC00DB416C;
+					};
+				};
+			};
+			buildConfigurationList = EA684EC41C7248CC00DB416C /* Build configuration list for PBXProject "calTEmp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA684EC01C7248CC00DB416C;
+			productRefGroup = EA684ECA1C7248CC00DB416C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA684EC81C7248CC00DB416C /* calTEmp */,
+				EA684EDF1C7248CC00DB416C /* calTEmpTests */,
+				EA684EEA1C7248CC00DB416C /* calTEmpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA684EC71C7248CC00DB416C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA684EDA1C7248CC00DB416C /* LaunchScreen.storyboard in Resources */,
+				EA684ED71C7248CC00DB416C /* Assets.xcassets in Resources */,
+				EA684ED21C7248CC00DB416C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EDE1C7248CC00DB416C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EE91C7248CC00DB416C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA684EC51C7248CC00DB416C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA684ECF1C7248CC00DB416C /* ViewController.swift in Sources */,
+				EA684ECD1C7248CC00DB416C /* AppDelegate.swift in Sources */,
+				EA684ED51C7248CC00DB416C /* calTEmp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EDC1C7248CC00DB416C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA684EE51C7248CC00DB416C /* calTEmpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA684EE71C7248CC00DB416C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA684EF01C7248CE00DB416C /* calTEmpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA684EE21C7248CC00DB416C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA684EC81C7248CC00DB416C /* calTEmp */;
+			targetProxy = EA684EE11C7248CC00DB416C /* PBXContainerItemProxy */;
+		};
+		EA684EED1C7248CD00DB416C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA684EC81C7248CC00DB416C /* calTEmp */;
+			targetProxy = EA684EEC1C7248CD00DB416C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA684ED01C7248CC00DB416C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA684ED11C7248CC00DB416C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA684ED91C7248CC00DB416C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA684EF21C7248CE00DB416C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA684EF31C7248CE00DB416C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA684EF51C7248CE00DB416C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = calTEmp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA684EF61C7248CE00DB416C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = calTEmp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA684EF81C7248CE00DB416C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = calTEmpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calTEmp.app/calTEmp";
+			};
+			name = Debug;
+		};
+		EA684EF91C7248CE00DB416C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = calTEmpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calTEmp.app/calTEmp";
+			};
+			name = Release;
+		};
+		EA684EFB1C7248CE00DB416C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = calTEmpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = calTEmp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EA684EFC1C7248CE00DB416C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = calTEmpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.doapps.calTEmpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = calTEmp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA684EC41C7248CC00DB416C /* Build configuration list for PBXProject "calTEmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA684EF21C7248CE00DB416C /* Debug */,
+				EA684EF31C7248CE00DB416C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA684EF41C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA684EF51C7248CE00DB416C /* Debug */,
+				EA684EF61C7248CE00DB416C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA684EF71C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA684EF81C7248CE00DB416C /* Debug */,
+				EA684EF91C7248CE00DB416C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA684EFA1C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA684EFB1C7248CE00DB416C /* Debug */,
+				EA684EFC1C7248CE00DB416C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA684ED31C7248CC00DB416C /* calTEmp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA684ED41C7248CC00DB416C /* calTEmp.xcdatamodel */,
+			);
+			currentVersion = EA684ED41C7248CC00DB416C /* calTEmp.xcdatamodel */;
+			path = calTEmp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA684EC11C7248CC00DB416C /* Project object */;
+}
