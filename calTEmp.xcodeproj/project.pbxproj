@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EA684ECD1C7248CC00DB416C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684ECC1C7248CC00DB416C /* AppDelegate.swift */; };
-		EA684ECF1C7248CC00DB416C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684ECE1C7248CC00DB416C /* ViewController.swift */; };
 		EA684ED21C7248CC00DB416C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED01C7248CC00DB416C /* Main.storyboard */; };
 		EA684ED51C7248CC00DB416C /* calTEmp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA684ED31C7248CC00DB416C /* calTEmp.xcdatamodeld */; };
 		EA684ED71C7248CC00DB416C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED61C7248CC00DB416C /* Assets.xcassets */; };
-		EA684EDA1C7248CC00DB416C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */; };
 		EA684EE51C7248CC00DB416C /* calTEmpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684EE41C7248CC00DB416C /* calTEmpTests.swift */; };
 		EA684EF01C7248CE00DB416C /* calTEmpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684EEF1C7248CE00DB416C /* calTEmpUITests.swift */; };
+		EA684EFE1C72494D00DB416C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA684EFD1C72494D00DB416C /* Launch Screen.storyboard */; };
+		EA684F001C724ADB00DB416C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA684EFF1C724ADB00DB416C /* PageViewController.swift */; };
+		EA7297881C725D7900B353C3 /* CronogramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7297871C725D7900B353C3 /* CronogramaViewController.swift */; };
+		EA72978A1C725D8600B353C3 /* HistorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7297891C725D8600B353C3 /* HistorialViewController.swift */; };
+		EA72978C1C728D7100B353C3 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72978B1C728D7100B353C3 /* ContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +40,9 @@
 /* Begin PBXFileReference section */
 		EA684EC91C7248CC00DB416C /* calTEmp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calTEmp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA684ECC1C7248CC00DB416C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA684ECE1C7248CC00DB416C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA684ED11C7248CC00DB416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA684ED41C7248CC00DB416C /* calTEmp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = calTEmp.xcdatamodel; sourceTree = "<group>"; };
 		EA684ED61C7248CC00DB416C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EA684ED91C7248CC00DB416C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA684EDB1C7248CC00DB416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA684EE01C7248CC00DB416C /* calTEmpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calTEmpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA684EE41C7248CC00DB416C /* calTEmpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calTEmpTests.swift; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		EA684EEB1C7248CD00DB416C /* calTEmpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calTEmpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA684EEF1C7248CE00DB416C /* calTEmpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calTEmpUITests.swift; sourceTree = "<group>"; };
 		EA684EF11C7248CE00DB416C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA684EFD1C72494D00DB416C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EA684EFF1C724ADB00DB416C /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EA7297871C725D7900B353C3 /* CronogramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CronogramaViewController.swift; sourceTree = "<group>"; };
+		EA7297891C725D8600B353C3 /* HistorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialViewController.swift; sourceTree = "<group>"; };
+		EA72978B1C728D7100B353C3 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,11 @@
 		EA684EC01C7248CC00DB416C = {
 			isa = PBXGroup;
 			children = (
+				EA72978B1C728D7100B353C3 /* ContentViewController.swift */,
+				EA7297891C725D8600B353C3 /* HistorialViewController.swift */,
+				EA7297871C725D7900B353C3 /* CronogramaViewController.swift */,
+				EA684EFF1C724ADB00DB416C /* PageViewController.swift */,
+				EA684EFD1C72494D00DB416C /* Launch Screen.storyboard */,
 				EA684ECB1C7248CC00DB416C /* calTEmp */,
 				EA684EE31C7248CC00DB416C /* calTEmpTests */,
 				EA684EEE1C7248CD00DB416C /* calTEmpUITests */,
@@ -100,10 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				EA684ECC1C7248CC00DB416C /* AppDelegate.swift */,
-				EA684ECE1C7248CC00DB416C /* ViewController.swift */,
 				EA684ED01C7248CC00DB416C /* Main.storyboard */,
 				EA684ED61C7248CC00DB416C /* Assets.xcassets */,
-				EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */,
 				EA684EDB1C7248CC00DB416C /* Info.plist */,
 				EA684ED31C7248CC00DB416C /* calTEmp.xcdatamodeld */,
 			);
@@ -232,7 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA684EDA1C7248CC00DB416C /* LaunchScreen.storyboard in Resources */,
+				EA684EFE1C72494D00DB416C /* Launch Screen.storyboard in Resources */,
 				EA684ED71C7248CC00DB416C /* Assets.xcassets in Resources */,
 				EA684ED21C7248CC00DB416C /* Main.storyboard in Resources */,
 			);
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA684ECF1C7248CC00DB416C /* ViewController.swift in Sources */,
+				EA684F001C724ADB00DB416C /* PageViewController.swift in Sources */,
+				EA7297881C725D7900B353C3 /* CronogramaViewController.swift in Sources */,
+				EA72978A1C725D8600B353C3 /* HistorialViewController.swift in Sources */,
 				EA684ECD1C7248CC00DB416C /* AppDelegate.swift in Sources */,
+				EA72978C1C728D7100B353C3 /* ContentViewController.swift in Sources */,
 				EA684ED51C7248CC00DB416C /* calTEmp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +315,6 @@
 				EA684ED11C7248CC00DB416C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EA684ED81C7248CC00DB416C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA684ED91C7248CC00DB416C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,6 +492,7 @@
 				EA684EF61C7248CE00DB416C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA684EF71C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +501,7 @@
 				EA684EF91C7248CE00DB416C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA684EFA1C7248CE00DB416C /* Build configuration list for PBXNativeTarget "calTEmpUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +510,7 @@
 				EA684EFC1C7248CE00DB416C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
