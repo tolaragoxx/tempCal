@@ -8,19 +8,35 @@
 
 import UIKit
 import CoreData
-var Users = [Dictionary<String,String>]()
-class HistorialViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+class HistorialViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    //var Users = [Dictionary<String,String>]()
+    var data = [NSManagedObject]()
     @IBOutlet weak var tabla: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        if NSUserDefaults.standardUserDefaults().objectForKey("Users") != nil{
-            Users = NSUserDefaults.standardUserDefaults().objectForKey("Users") as! [Dictionary<String,String>]
-        }
-        print(Users)
+//        if NSUserDefaults.standardUserDefaults().objectForKey("Users") != nil{
+//            Users = NSUserDefaults.standardUserDefaults().objectForKey("Users") as! [Dictionary<String,String>]
+//        }
+//        print(Users)
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "Users")
+        do{
+            let result = try context.executeFetchRequest(request)
+            data = result as! [NSManagedObject]
+        }catch let error as NSError {
+            print(error.description)
+        }
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,21 +44,21 @@ class HistorialViewController: UIViewController,UITableViewDataSource,UITableVie
     }
     //MARK: - Table datasource methods
     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        return Users.count
+        return data.count
     }
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
         // fixed font style. use custom view (UILabel) if you want something different
-        let user = Users[section]
-        return user["name"]!.uppercaseString
+        let user = data[section]
+//        return user["name"]!.uppercaseString
+        return user.valueForKey("name") as! String
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
-        let user = Users[indexPath.row]
-        cell.textLabel?.text = user["ruc"]!
-        //        cell.textLabel?.text = "toby"
+        let user = data[indexPath.row]
+        cell.textLabel?.text = user.valueForKey("ruc") as! String
         return cell
     }
 

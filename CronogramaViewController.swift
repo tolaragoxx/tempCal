@@ -12,7 +12,7 @@ protocol CronogramaViewControllerDelegate{
     func updateHistorial(name: String,ruc: String)
 }
 class CronogramaViewController: UIViewController {
-    var delegate : CronogramaViewControllerDelegate! = nil
+    var delegate : CronogramaViewControllerDelegate?
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var rucTF: UITextField!
     
@@ -21,7 +21,9 @@ class CronogramaViewController: UIViewController {
             return
         }
         print(ruc,name)
-        delegate.updateHistorial(name, ruc: ruc)
+        if delegate != nil {
+            delegate?.updateHistorial(name, ruc: ruc)
+        }
         nameTF.text = ""
         rucTF.text = ""
         nameTF.resignFirstResponder()
@@ -31,19 +33,10 @@ class CronogramaViewController: UIViewController {
         super.touchesBegan(touches, withEvent: event)
         view.endEditing(true)
     }
-
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

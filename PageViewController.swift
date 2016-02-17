@@ -7,28 +7,24 @@
 //
 
 import UIKit
-
+import CoreData
 class PageViewController: UIPageViewController,UIPageViewControllerDelegate,UIPageViewControllerDataSource{
-    var pages = [UIViewController]()
+    var pages = ["calculadora","cronograma","historial"]
+    var pageDelegate: PageViewControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         self.dataSource = self
-        let page1: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("calculadora")
-        let page2: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("cronograma")
-        let page3: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("historial")
-        pages.append(page1)
-        pages.append(page2)
-        pages.append(page3)
-        
-        setViewControllers([page1], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
-        
-        // Do any additional setup after loading the view.
+        setViewControllers([viewControllerAtIndex(0)!], direction: UIPageViewControllerNavigationDirection.Forward, animated: true, completion: nil)
+    }
+    //MARK: - Delegate methods
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool){
+        notifyTutorialDelegateOfNewIndex()
     }
    
-    //MARK: - DataSOurce methods
+    //MARK: - DataSource methods
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?{
-        guard let currentIndex = pages.indexOf(viewController) else {
+        guard let currentIndex = pages.indexOf(viewController.restorationIdentifier!) else {
             return nil
         }
         let previousIndex = currentIndex - 1
@@ -38,10 +34,10 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate,UIPa
         guard pages.count > previousIndex else{
             return nil
         }
-        return pages[previousIndex]
+        return viewControllerAtIndex(previousIndex)
     }
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
-        guard let currentIndex = pages.indexOf(viewController) else {
+        guard let currentIndex = pages.indexOf(viewController.restorationIdentifier!) else {
             return nil
         }
         let nextIndex = currentIndex + 1
@@ -52,6 +48,56 @@ class PageViewController: UIPageViewController,UIPageViewControllerDelegate,UIPa
         guard pagesCount > nextIndex else{
             return nil
         }
-        return pages[nextIndex]
+        return viewControllerAtIndex(nextIndex)
+    }
+    
+    func viewControllerAtIndex(index: Int) -> UIViewController?{
+        let vc = storyboard?.instantiateViewControllerWithIdentifier(pages[index])
+        if pages[index] == "cronograma"{
+            (vc as! CronogramaViewController).delegate = self
+        }
+        
+        return vc
+    }
+    func scrollToViewController(viewController: UIViewController){
+        setViewControllers([viewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: true,completion:{ (finished) -> Void in
+            // Setting the view controller programmatically does not fire
+            // any delegate methods, so we have to manually notify the
+            // 'tutorialDelegate' of the new index.
+            self.notifyTutorialDelegateOfNewIndex()
+        })
+
+    }
+    func notifyTutorialDelegateOfNewIndex() {
+        if let firstViewController = viewControllers?.first,
+            let index = pages.indexOf(firstViewController.restorationIdentifier!) {
+                pageDelegate?.pageViewController(self,
+                    didUpdatePageIndex: index)
+        }
     }
 }
+
+
+protocol PageViewControllerDelegate{
+    func pageViewController(pageViewController: PageViewController,didUpdatePageIndex index: Int)
+
+}
+extension PageViewController: CronogramaViewControllerDelegate{
+    func updateHistorial(name: String, ruc: String) {
+        print("protocolo recibido",name,ruc)
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDel.managedObjectContext
+        if let newUser = try? NSEntityDescription.insertNewObjectForEntityForName("Users", inManagedObjectContext: context){
+            newUser.setValue(name, forKey: "name")
+            newUser.setValue(ruc, forKey: "ruc")
+            _ = try? context.save()
+        }
+        
+        if let hist = storyboard?.instantiateViewControllerWithIdentifier("historial"){
+            scrollToViewController(hist)
+        }
+    }
+}
+
+
+
